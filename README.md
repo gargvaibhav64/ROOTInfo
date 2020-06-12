@@ -21,6 +21,14 @@ For building using CMake on Windows
 ```
 cmake --build . --config [Debug|Release]
 ```
+For Single CPU
+```
+cmake --build . --config Debug -- /maxcpucount:1
+```
+For Building a Upto Target X
+```
+cmake --build . --config --target X Debug -- /maxcpucount:1
+```
 
 
 
