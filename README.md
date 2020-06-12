@@ -27,7 +27,7 @@ cmake --build . --config Debug -- /maxcpucount:1
 ```
 For Building a Upto Target X
 ```
-cmake --build . --config --target X Debug -- /maxcpucount:1
+cmake --build . --target X --config Debug -- /maxcpucount:1
 ```
 
 
