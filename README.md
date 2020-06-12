@@ -7,8 +7,14 @@ devenv /debugexe E:/root-build/bin/rootcling_stage1.exe -v2 -f G__Core.cxx -cxxm
 ```
 
 For configuring CMake on Windows
+
+Debug
 ```
-cmake -G "Visual Studio 16 2019" -A Win32 -Thost=x64 -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_CXX_STANDARD=14 -Dtesting=Off -Druntime_cxxmodules=On -DLLVM_BUILD_TYPE=Debug ../root
+cmake -G "Visual Studio 16 2019" -A Win32 -Thost=x64 -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_CXX_STANDARD=14 -Dtesting=Off -Druntime_cxxmodules=On -DLLVM_BUILD_TYPE=Debug -Dpyroot=Off ../root
+```
+Release
+```
+cmake -G "Visual Studio 16 2019" -A Win32 -Thost=x64 -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_CXX_STANDARD=14 -Dtesting=Off -Druntime_cxxmodules=On -Dpyroot=Off ../root
 ```
 
 For building using CMake on Windows
