@@ -30,6 +30,10 @@ For Building a Upto Target X
 cmake --build . --target X --config Debug -- /maxcpucount:1
 ```
 
+For Builds with Testing On
+```
+cmake -G "Visual Studio 16 2019" -A Win32 -Thost=x64 -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_CXX_STANDARD=14 -Dtesting=On -Droottest=On -Druntime_cxxmodules=On -Dpyroot=On ../root
+```
 
 
 
